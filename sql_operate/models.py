@@ -3,7 +3,7 @@ from sql_operate.sql import db
 
 class EqxParsed(db.Model):
     """
-    打标员
+    爬虫数据表
     """
     __tablename__ = 'eqxiu_scene_parsed'
 
