@@ -1,0 +1,1 @@
+import requestsimport jsonparams = {'page_index': 2, 'data_count_per_page': 100}url = 'http://127.0.0.1:5000/v1/api/get_id'r = requests.get(url=url, params=params)print(r.text)params = {'id': 76099}url = 'http://127.0.0.1:5000/vi/api/get_data'r = requests.get(url=url, params=params)data = r.json()print(data)

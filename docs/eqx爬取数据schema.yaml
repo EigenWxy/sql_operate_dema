@@ -1,0 +1,31 @@
+# eqx爬取数据schema
+
+_id:            # 模板的唯一标志
+view_size:      # 可视图的大小，([500,300])
+view_oss:       # 文件可视图oss的存储地址，(md5(file) + _ + filename(url) + _ + 'view.png')
+type:           # 类型
+created_time:   # datetime.datetime类型的数据
+heat:           # 热度(int)
+color:          # 色系(#0000FF)
+price:          # 价格('free')
+ranking:        # 综合排序排名(如第一页第一个，排名为1)
+url:            # 文件路径，('全部商品-用途-邀请函')
+name:           # 设计的名称（'高端大气黑金邀请函企业年会'）
+layer:          # 图层(text,json.dumps(list))
+- type:         # 类型，(text、pic、shape)
+  name:         # 名字，('图片6')
+  pos:          # 位置，([100, 210],int类型)
+  depth:        # 图层顺序z（int）
+  size:         # 尺寸，([100, 100])
+  oss:          # 图像oss的存储地址，默认为png格式(md5(file) _ layer.name _ '.png)
+  font:         # 字体样式 (文本类图层有，其余图层为None)
+    text:       # 文本，('今日上头条')
+    type:       # 字体类型 ('方正彩云简体')
+    size:       # 字号 (18)
+    color:      # 颜色(#0000FF)
+    back_color: # 背景颜色(#0000FF)
+    align:      # 对齐格式（'left'）
+    row_height: # 行高(float)
+    spacing:    # 字距(int)
+
+
